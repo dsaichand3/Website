@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="utf-8">
+		<title>Welcome</title>
+		<link href="https://fonts.googleapis.com/css?family=Google+Sans:+400,500,700" media="all" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap" rel="stylesheet">
+		<style>
+			body{
+				background-color: white;
+			}
+			header{
+				display: flex;
+				justify-content: center;
+			}
+			h1{
+				
+				font-size: 45px;
+				color:black;
+				text-align: left;
+				margin: 70px;
+				font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+			}
+
+			p{
+  				font-size: 20px;
+  				color: black;
+  				text-align: center;
+  				font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+			}
+			img {
+				max-width: 100%;
+			}
+			.pre-heading p{
+				font-size: 20px;
+  				color: black;
+  				text-align: center;
+  				font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+			}
+			.grid-container{
+				display: grid;
+				justify-content: center;
+				grid-column-gap:1px;
+				grid-template-columns: auto auto auto;
+				padding: 10px;
+			}
+			.grid-item {
+				border: 1px solid rgba(0, 0, 0, 0.8);
+				font-size: 30px;
+				text-align: bottom ;
+				border-radius:10px;
+				background: white;
+				border-style: solid;
+				border-color: black;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				max-width: 415px;
+				max-height: 750px;
+				
+				margin: 50px;
+				font-family: "Roboto",sans-serif;
+				display: flex;
+				flex-direction: column;
+			}
+			.grid-item:hover {
+				
+			}
+			.content-wrap {
+				padding: 15px 5px;
+			}
+			.image-wrap img {
+				border-top-right-radius: 9px;
+				border-top-left-radius: 9px;
+				height: 250px
+			}
+			.image-container img{
+				width: 100%;
+				height: 450px;
+			}
+
+			.description{
+				font-size: 18px;
+  				text-align: center;
+  				font-family:'Pontano Sans', sans-serif;
+			}			
+
+			.sub-heading{
+				font-family: "Google Sans",sans-serif;
+				font-size: 23px;
+				font-weight: 500;
+				line-height: 32px;
+				color: black;
+				
+			}
+			.image-container{
+				position: relative;
+				text-align: center;
+				color: black;
+				font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+			}
+			.text-on-image{
+				font-size :55px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+		</style>
+	</head>
+	<body>
+		<main>
+			
+			<div class="image-container">
+				<img src = "./bg.jpg">
+				<div class="text-on-image">
+					
+					<header>
+						<h1>Projects</h1>
+					</header>
+					
+					<section class = "pre-heading">
+						<p>Hello World!</p>
+						<p>Simple step by step walkthroughs to solve common Machine Learning problems.</p>
+					</section>
+				
+				</div>
+			</div>
+			
+			<div class = "grid-container">
+				<div class = "grid-item">
+					<div class="image-wrap">
+						<img src='./cnn.gif'/> 
+					</div>
+					<div class="content-wrap">
+						<p class="sub-heading">Convolutional Neural Networks</p>
+						<div class = "description"> In deep learning, a convolutional neural network is a class of deep neural networks, most commonly applied to analyzing visual imagery. CNNs are regularized versions of multilayer perceptrons..</div>
+					</div>
+				</div>
+
+				<div class = "grid-item">
+					<div class="image-wrap">
+						<img src='./Translate.png'/> 
+					</div>
+					<div class="content-wrap">
+						<p class="sub-heading">Neural machine translation using attention</p>
+						<div class = "description">Neural machine translation is translating text from one language to another. With the power of deep learning, Neural Machine Translation (NMT) has arisen as the most powerful algorithm to perform this task.</div>
+					</div>
+				</div>
+
+				<div class = "grid-item">
+					<div class="image-wrap">
+						<img src='./LSTM.jpg'/> 
+					</div>
+					<div class="content-wrap">
+						<p class="sub-heading">Recurrent Neural Networks and LSTM</p>
+						<div class = "description"> Recurrent nets are a type of artificial neural network designed to recognize patterns in sequences of data, such as text, handwriting, the spoken word, or numerical times series. Research shows them to be one of the most powerful and useful type of neural network. </div>
+					</div>
+				</div>
+
+				<div class = "grid-item">
+					<div class="image-wrap">
+						<img src='./Reinforcement.png'/> 
+					</div>
+					<div class="content-wrap">
+						<p class="sub-heading">Reinforcement Learning</p>
+						<div class = "description"> Reinforcement learning refers to goal-oriented algorithms, which learn how to attain a complex objective (goal) or maximize along a particular dimension over many steps; for example, maximize the points won in a game over many moves. They can start from a blank slate, and under the right conditions they achieve superhuman performance.</div>
+					</div>
+				</div>
+
+				<div class = "grid-item">
+					<div class="image-wrap">
+						<img src='./vae.png'/> 
+					</div>
+					<div class="content-wrap">
+						<p class="sub-heading">Variational Auto Encoders</p>
+						<div class = "description"> VAE's take data as input and discover some latent state representation of that data. More specifically, our input data is converted into an encoding vector where each dimension represents some learned attribute about the data.</div>
+					</div>
+				</div>
+
+				<div class = "grid-item">
+					<div class="image-wrap">
+						<img src='./dims.JPEG'/> 
+					</div>
+					<div class="content-wrap">
+						<p class="sub-heading">Generative Adversarial Networks</p>
+						<div class = "description"> Two models are trained simultaneously by an adversarial process. A generator ("the artist") learns to create images that look real, while a discriminator ("the art critic") learns to tell real images apart from fakes.</div>
+					</div>
+				</div>
+
+			</div>
+	
+			
+		</main>
+
+	</body>
+</html>
