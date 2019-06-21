@@ -10,8 +10,10 @@
 				background-color: white;
 			}
 			header{
+				margin: 150px;
 				display: flex;
 				justify-content: center;
+				height: 180px;
 			}
 			h1{
 				
@@ -43,7 +45,7 @@
 				display: grid;
 				justify-content: center;
 				grid-column-gap:1px;
-				grid-template-columns: auto auto auto;
+				grid-template-columns: auto auto;
 				padding: 10px;
 			}
 			.grid-item {
@@ -56,7 +58,7 @@
 				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 				max-width: 415px;
 				max-height: 750px;
-				
+				border-radius: 10px;
 				margin: 50px;
 				font-family: "Roboto",sans-serif;
 				display: flex;
@@ -69,7 +71,9 @@
 				padding: 15px 5px;
 			}
 			.image-wrap img {
-				height: 250px
+				height: 250px;
+				border-top-left-radius: 9px;
+				border-top-right-radius: 9px;
 			}
 			.image-container img{
 				width: 100%;
@@ -90,41 +94,23 @@
 				color: black;
 				
 			}
-			.image-container{
-				position: relative;
-				text-align: center;
-				color: black;
-				font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-			}
-			.text-on-image{
-				font-size :55px;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
 
 		</style>
 	</head>
 	<body>
 		<main>
 			
-			<div class="image-container">
-				<img src = "./bg.jpg">
-				<div class="text-on-image">
-					
-					<header>
-						<h1>Write Code. Blow Minds.</h1>
-					</header>
-					
-					<section class = "pre-heading">
-						<p></p>
-						<p></p>
-					</section>
+
+			<header>
+				<h1>Write Code. Blow Minds.</h1>
+			</header>
+
+			<section class = "pre-heading">
+				<p></p>
+				<p></p>
+			</section>
 				
-				</div>
-			</div>
-			
+
 			<div class = "grid-container">
 				<div class = "grid-item">
 					<div class="image-wrap">
@@ -135,6 +121,17 @@
 						<div class = "description"> A convolutional neural network is a class of deep neural networks, most commonly applied to analyzing images.</div>
 					</div>
 				</div>
+
+				<div class = "grid-item">
+					<div class="image-wrap">
+						<img src='./Reinforcement.png'/> 
+					</div>
+					<div class="content-wrap">
+						<p class="sub-heading">Reinforcement Learning</p>
+						<div class = "description"> Reinforcement learning refers to goal-oriented algorithms, which learn how to attain a complex objective (goal) or maximize along a particular dimension over many steps. They can start from a blank state, and under the right conditions they achieve superhuman performance.</div>
+					</div>
+				</div>
+
 
 				<div class = "grid-item">
 					<div class="image-wrap">
@@ -156,15 +153,6 @@
 					</div>
 				</div>
 
-				<div class = "grid-item">
-					<div class="image-wrap">
-						<img src='./Reinforcement.png'/> 
-					</div>
-					<div class="content-wrap">
-						<p class="sub-heading">Reinforcement Learning</p>
-						<div class = "description"> Reinforcement learning refers to goal-oriented algorithms, which learn how to attain a complex objective (goal) or maximize along a particular dimension over many steps. They can start from a blank state, and under the right conditions they achieve superhuman performance.</div>
-					</div>
-				</div>
 
 				<div class = "grid-item">
 					<div class="image-wrap">
